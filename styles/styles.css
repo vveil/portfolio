@@ -1,0 +1,41 @@
+html {
+  font-family: Helvetica;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 1vw;
+  font-size: large;
+  /* position: fixed; */
+}
+
+.content {
+  background: grey;
+  width: 100%;
+  height: 100vh;
+}
+
+.image {
+  margin: 5px;
+}
+
+#heading {
+  font-size: x-large;
+  margin-bottom: 3vh;
+}
+
+.nav_element {
+  padding: 1vh 0.5vw;
+}
+
+.nav_element:hover {
+  color: white;
+  background: black;
+}
