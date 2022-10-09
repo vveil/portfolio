@@ -1,10 +1,17 @@
+:root {
+  --main-text-color: black;
+  --main-text-color-hover: white;
+}
+
 html {
   font-family: Helvetica;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
+  color: var(--main-text-color);
 }
 
 .nav {
@@ -21,6 +28,11 @@ html {
   height: 100vh;
 }
 
+h2 {
+    width: 100%;
+    text-align: center;
+}
+
 .image {
   margin: 5px;
 }
@@ -35,10 +47,38 @@ html {
 }
 
 .nav_element:hover {
-  color: white;
+  color: var(--main-text-color-hover);
   background: black;
 }
 
 #kh_faehre {
-    width: 100%;
+  width: 100%;
+}
+
+.bigdiv {
+  height: 1000px;
+}
+
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #heading {
+    font-size: x-large;
+    margin-bottom: 1.5vh;
+  }
+}
+
+a:link,
+a:active,
+a:visited {
+  text-decoration: none;
+  color: var(--main-text-color);
+}
+
+a:hover {
+  text-decoration: none;
+  color: var(--main-text-color-hover);
 }
